@@ -2,6 +2,7 @@ class LoginPage {
   async navigateToLoginScreen() {
     //linkinedIN
     await page.goto('https://www.google.com/?gws_rd=ssl');
+    
   // await page.waitForURL('https://www.google.com/?gws_rd=ssl');
   // await page.locator('[aria-label="Search"]').click();
   // await page.locator('[aria-label="Search"]').fill('linkedin');
