@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/cucumber-js --require cucumber.js --require step-definitions/**/*.js -f --publish-quiet  json:cucumber_report.json ",
+    "test": "./node_modules/.bin/cucumber-js --require cucumber.js --require step-definitions/**/*.js -f --publish-quiet  --require json:cucumber_report.json --require html:reports/**/*.html",
     
-    "report": "node reporter.js"
+    "report": "./reporter.js"
   },
-  "author": "Rajat Verma",
+  "author": "Kalaiyarasan",
   "license": "ISC",
   "dependencies": {
     "@cucumber/cucumber": "^8.1.2",

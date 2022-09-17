@@ -9,8 +9,11 @@ const common = `
     --format summary
     --require reporter.js
     --require progress-bar
+    --require package.json    
     
     `
+
+
 module.exports = {
   default: `${common} features/**/*.feature`,
 }
